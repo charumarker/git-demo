@@ -12,3 +12,5 @@ pipeline {
                 stash(name: 'compiled-results', includes: 'git-demo/*.py*')
             }
         }
+    }
+}
