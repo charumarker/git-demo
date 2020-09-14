@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile git-demo/car.py'
+                sh 'python -m py_compile car.py'
                 stash(name: 'compiled-results', includes: 'git-demo/*.py*')
             }
         }
